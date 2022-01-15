@@ -1,0 +1,73 @@
+.parent{
+    position: relative;
+    height: 600px;
+}
+.image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.boxopacity{
+    position: absolute;
+    right: 5%;
+    bottom: 9%;
+text-align: center;
+background-color: gray;
+opacity: .8;
+padding-left: 2%;
+padding-right: 2%;
+}
+.color{
+    color: white;
+    margin-bottom: 2%;
+}
+.button{
+margin-top: 2%;
+margin-bottom: 2%;
+}
+/*Part 2: Apply CSS Animation to make a clock as below*/
+.CLOCK{
+    position: relative; 
+    height: 600px;
+    background-color: gray;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+    padding-top: 4%;
+}
+.image2{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+.handhour{
+    position: absolute;
+    transform-origin: center left;
+    transform: rotate(0deg);
+    right: 35%;
+    bottom: 41%;
+    width: 15%;
+    animation: handhour 10s infinite linear ;
+    animation-delay: 2.2s;
+}
+.handminutes{
+    position: absolute;
+    transform-origin: center left;
+    right: 32%;
+    bottom: 40%;
+    width: 18%;
+    transform: rotate(-90deg);
+    animation: handminutes 10s infinite linear ;
+    animation-delay: 2s;
+}
+@keyframes handminutes{
+    100%{transform: rotatez(270deg);}
+}
+
+@keyframes handhour{
+    100%{transform: rotatez(33deg);}
+}
+
